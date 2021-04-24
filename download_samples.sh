@@ -1,17 +1,22 @@
 #!/bin/bash
+
+set -o errexit
+set -o nounset
+set -o pipefail
+
 CWD=$(pwd)
 SAMPLES_DIR="$CWD/samples"
 
 function download_json_samples() {
-    mkdir -p $SAMPLES_DIR
-    cd $SAMPLES_DIR
+    mkdir -p "$SAMPLES_DIR"
+    cd "$SAMPLES_DIR"
     wget -nc wget -nc https://github.com/lukasmartinelli/pgfutter/releases/download/v0.1-alpha/json_sample_2015-01-01-15.json
-    cd $CWD
+    cd "$CWD"
 }
 
 function download_csv_samples() {
-    mkdir -p $SAMPLES_DIR
-    cd $SAMPLES_DIR
+    mkdir -p "$SAMPLES_DIR"
+    cd "$SAMPLES_DIR"
     wget -nc https://github.com/lukasmartinelli/pgfutter/releases/download/v0.1-alpha/csv_sample_distribution_of_wealth_switzerland.csv
     wget -nc https://github.com/lukasmartinelli/pgfutter/releases/download/v0.1-alpha/csv_sample_employee_salaries.csv
     wget -nc https://github.com/lukasmartinelli/pgfutter/releases/download/v0.1-alpha/csv_sample_local_severe_wheather_warning_systems.csv
@@ -25,7 +30,7 @@ function download_csv_samples() {
     wget -nc https://github.com/lukasmartinelli/pgfutter/releases/download/v0.1-alpha/csv_sample_techcrunch_continental_usa.csv
     wget -nc https://github.com/lukasmartinelli/pgfutter/releases/download/v0.1-alpha/csv_sample_vermoegensklassen.csv
     wget -nc https://github.com/lukasmartinelli/pgfutter/releases/download/v0.1-alpha/csv_sample_metadatenbank.csv
-    cd $CWD
+    cd "$CWD"
 }
 
 download_json_samples
