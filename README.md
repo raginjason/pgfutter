@@ -1,5 +1,5 @@
 # pgfutter
-[![Build Status](https://travis-ci.org/lukasmartinelli/pgfutter.svg?branch=master)](https://travis-ci.org/lukasmartinelli/pgfutter)
+[![Build Status](https://travis-ci.com/raginjason/pgfutter.svg?branch=master)](https://travis-ci.com/raginjason/pgfutter)
 [![Go Report Card](https://goreportcard.com/badge/github.com/raginjason/pgfutter)](https://goreportcard.com/report/github.com/raginjason/pgfutter)
 ![License](https://img.shields.io/badge/license-MIT%20License-blue.svg)
 
