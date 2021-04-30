@@ -33,5 +33,12 @@ function download_csv_samples() {
     cd "$CWD"
 }
 
+function verify_checksums() {
+    cd "$SAMPLES_DIR"
+    shasum -c checksums.sha1
+    cd "$CWD"
+}
+
 download_json_samples
 download_csv_samples
+verify_checksums
