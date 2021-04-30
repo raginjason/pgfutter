@@ -47,7 +47,7 @@ chmod +x pgfutter
 **Install from source**
 
 ```bash
-go get github.com/lukasmartinelli/pgfutter
+go get github.com/raginjason/pgfutter
 ```
 
 If you are using Windows or 32-bit architectures you need to [download the appropriate binary
